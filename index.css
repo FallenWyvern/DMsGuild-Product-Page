@@ -1,0 +1,151 @@
+.strokeText {
+   font-family: 'Grenze', serif;
+   text-shadow: 3px 3px 3px #000000;
+   text-shadow: -3px 3px 3px #000000;
+   text-shadow: 3px -3px 3px #000000;
+   text-shadow: -3px -3px 3px #000000;
+}
+
+p{
+	color: white;
+}
+
+.hidden{
+display:none;
+}
+
+.on{		
+	opacity: 0.5;
+}
+
+.off {	
+	opacity: 1.0;	
+}
+
+.buttonPanel{	
+	position:absolute;
+	width:25%;
+	height: 10%;	
+	left: 0px;
+	top: 0px;
+}
+
+.centerColumn{
+	width:80%; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.products{
+	padding-top:15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.filterImage{
+	width:60px;
+	height:60px;
+}
+
+.header{
+	font-size:24px;
+}
+
+.fgcon{
+	padding-top:5px;
+	color:#993300;
+}
+
+.hccon{
+	padding-top:5px;
+	color:#003366;
+}
+
+.info-box {
+     float: left;
+    display: block;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    color: #897777;
+}
+
+.thumbnail {
+     width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.title-head{
+	color:#555555;
+	font-weight:bold;
+}
+
+.title-body{
+}
+
+div.metal:before {
+    position: absolute;
+    right: -65px;
+    top: -65px;
+    transform: scale(0.4);
+}
+
+div.metal.copper:before {		
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Copper.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.silver:before {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Silver.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.electrum:before  {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Electrum.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.gold:before  {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Gold.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.platinum :before {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Platinum.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.mithral:before  {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Mithral.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
+
+div.metal.adamantine:before  {
+	content:url(https://www.dmsguild.com/themes/dmg/images/buttons/english/MetalBestSeller-Adamantine.png);
+	position:absolute;
+	right: -15%;
+	top:10%;
+	transform: scale(0.4);	
+}
