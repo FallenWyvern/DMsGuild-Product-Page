@@ -1,6 +1,7 @@
 var nometal, copper, silver, electrum, gold, platinum, mithral, adamantine = false;
 var backgrounds, feats, npcs, sidekicks, races, spells, mechanics, classes, items, monsters, adventures = false;
 var artificer, barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard = false;
+var series, BOF, EA, CC, ME, PP, AA = false;
 
 $(document).ready(function(){
 	  $("#filter-all" ).click(function() {
@@ -178,6 +179,17 @@ $(document).ready(function(){
 		}	
 		refresh();
 	 });
+	
+	$("#filter-series").click(function(){						
+		if ($(this).hasClass('on')){
+			classes= true;
+			$('.classTray').show();
+		} else {
+			classes= false;
+			$('.classTray').hide();
+		}	
+		refresh();
+	 });
 	 
 	 $("#filter-items").click(function(){						
 		if ($(this).hasClass('on')){
@@ -202,6 +214,60 @@ $(document).ready(function(){
 			adventures= true;
 		} else {
 			adventures= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-BOF").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-EA").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-CC").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-ME").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-PP").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-AA").click(function(){						
+		if ($(this).hasClass('on')){
+			artificer= true;
+		} else {
+			artificer= false;
 		}	
 		refresh();
 	 });
@@ -345,6 +411,14 @@ $(document).ready(function(){
 		items = value;
 		monsters = value;
 		adventures = value;
+	 	series = value;
+	 
+	 	BOF = value;
+		EA = value;
+		CC = value;
+		ME = value;
+		PP = value;
+		AA = value;
 		
 		artificer = value;
 		barbarian = value;
@@ -392,7 +466,7 @@ $(document).ready(function(){
 		}
 		
 		var allCatFiltered = false;
-		if (backgrounds && feats && npcs && sidekicks && races && spells && mechanics && classes && items && monsters){
+		if (backgrounds && feats && npcs && sidekicks && races && spells && mechanics && classes && items && monsters && series){
 			console.log("All categories filtered.");
 			allCatFiltered = true;
 		}		
@@ -419,8 +493,16 @@ $(document).ready(function(){
 		if (items){$('.items').parent().hide();}	
 		if (monsters){$('.monsters').parent().hide();}	
 		if (adventures){$('.adventures').parent().hide();}	
-		
-		if (artificer){$('.artificer').parent().hide();}	
+	 	if (series){$('.series').parent().hide();}	
+	 
+	 	if (BOF){$('.bof').parent().hide();}	
+		if (EA){$('.ea').parent().hide();}	
+		if (CC){$('.cc').parent().hide();}	
+		if (ME){$('.me').parent().hide();}	
+		if (PP){$('.pp').parent().hide();}	
+		if (AA){$('.aa').parent().hide();}	
+
+	 	if (artificer){$('.artificer').parent().hide();}	
 		if (barbarian){$('.barbarian').parent().hide();}	
 		if (bard){$('.bard').parent().hide();}	
 		if (cleric){$('.cleric').parent().hide();}	
@@ -446,6 +528,7 @@ $(document).ready(function(){
 			if (!items){$('.items').parent().show();}	
 			if (!monsters){$('.monsters').parent().show();}	
 			if (!adventures){$('.adventures').parent().show();}	
+			if (!series){$('.series').parent().show();}
 		}
 		
 		if (allMetalsFiltered){
@@ -511,7 +594,17 @@ $(document).ready(function(){
 		if (!monsters){$('.monsters').parent().show();}	
 		if (!adventures){$('.adventures').parent().show();}	
 		if (!classes){$('.classes').parent().show();}
+	 	if (!series){$('.series').parent().show();}
 		
+	 	if (series){
+			if (BOF){$('.bof').parent().show();}	
+			if (EA){$('.ea').parent().show();}	
+			if (CC){$('.cc').parent().show();}	
+			if (ME){$('.me').parent().show();}	
+			if (PP){$('.pp').parent().show();}	
+			if (AA){$('.aa').parent().show();}	
+		}
+	 
 		if (classes){
 			if (!artificer){$('.artificer').parent().show();}	
 			if (!barbarian){$('.barbarian').parent().show();}	
