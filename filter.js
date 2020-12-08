@@ -222,54 +222,54 @@ $(document).ready(function(){
 	
 	$("#filter-BOF").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			bof= true;
 		} else {
-			artificer= false;
+			bof= false;
 		}	
 		refresh();
 	 });
 	
 	$("#filter-EA").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			ea= true;
 		} else {
-			artificer= false;
+			ea= false;
 		}	
 		refresh();
 	 });
 	
 	$("#filter-CC").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			cc= true;
 		} else {
-			artificer= false;
+			cc= false;
 		}	
 		refresh();
 	 });
 	
 	$("#filter-ME").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			me= true;
 		} else {
-			artificer= false;
+			me= false;
 		}	
 		refresh();
 	 });
 	
 	$("#filter-PP").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			pp= true;
 		} else {
-			artificer= false;
+			pp= false;
 		}	
 		refresh();
 	 });
 	
 	$("#filter-AA").click(function(){						
 		if ($(this).hasClass('on')){
-			artificer= true;
+			aa= true;
 		} else {
-			artificer= false;
+			aa= false;
 		}	
 		refresh();
 	 });
