@@ -10,6 +10,7 @@ $(document).ready(function(){
 			$('.filterImage').removeClass('off');
 			$('.filterImage').addClass('on');
 			$('.classTray').show();
+		  	$('.seriesTray').show();
 			refresh();			
 	  } );
 	  
@@ -19,6 +20,7 @@ $(document).ready(function(){
 			$('.filterImage').removeClass('on');
 			$('.filterImage').addClass('off');
 			$('.classTray').hide();
+		  	$('.seriesTray').hide();
 			refresh();
 	  } );
 	
