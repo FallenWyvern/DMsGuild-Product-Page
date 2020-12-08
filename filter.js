@@ -183,10 +183,10 @@ $(document).ready(function(){
 	$("#filter-series").click(function(){						
 		if ($(this).hasClass('on')){
 			classes= true;
-			$('.classTray').show();
+			$('.seriesTray').show();
 		} else {
 			classes= false;
-			$('.classTray').hide();
+			$('.seriesTray').hide();
 		}	
 		refresh();
 	 });
