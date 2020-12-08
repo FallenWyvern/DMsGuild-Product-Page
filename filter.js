@@ -1,7 +1,7 @@
 var nometal, copper, silver, electrum, gold, platinum, mithral, adamantine = false;
-var backgrounds, feats, npcs, sidekicks, races, spells, mechanics, classes, items, monsters, adventures = false;
+var backgrounds, feats, npcs, sidekicks, races, spells, mechanics, classes, items, monsters, adventures, series = false;
 var artificer, barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard = false;
-var series, bof, ea, cc, me, pp, aa = false;
+var bof, ea, cc, me, pp, aa = false;
 
 $(document).ready(function(){
 	  $("#filter-all" ).click(function() {
