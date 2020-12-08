@@ -600,12 +600,12 @@ $(document).ready(function(){
 	 	if (!series){$('.series').parent().show();}
 		
 	 	if (series){
-			if (bof){$('.bof').parent().show();}	
-			if (ea){$('.ea').parent().show();}	
-			if (cc){$('.cc').parent().show();}	
-			if (me){$('.me').parent().show();}	
-			if (pp){$('.pp').parent().show();}	
-			if (aa){$('.aa').parent().show();}	
+			if (!bof){$('.bof').parent().show();}	
+			if (!ea){$('.ea').parent().show();}	
+			if (!cc){$('.cc').parent().show();}	
+			if (!me){$('.me').parent().show();}	
+			if (!pp){$('.pp').parent().show();}	
+			if (!aa){$('.aa').parent().show();}	
 		}
 	 
 		if (classes){
