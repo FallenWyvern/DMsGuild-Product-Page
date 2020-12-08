@@ -1,7 +1,7 @@
 var nometal, copper, silver, electrum, gold, platinum, mithral, adamantine = false;
 var backgrounds, feats, npcs, sidekicks, races, spells, mechanics, classes, items, monsters, adventures = false;
 var artificer, barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard = false;
-var series, BOF, EA, CC, ME, PP, AA = false;
+var series, bof, ea, cc, me, pp, aa = false;
 
 $(document).ready(function(){
 	  $("#filter-all" ).click(function() {
@@ -220,7 +220,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-BOF").click(function(){						
+	$("#filter-bof").click(function(){						
 		if ($(this).hasClass('on')){
 			bof= true;
 		} else {
@@ -229,7 +229,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-EA").click(function(){						
+	$("#filter-ea").click(function(){						
 		if ($(this).hasClass('on')){
 			ea= true;
 		} else {
@@ -238,7 +238,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-CC").click(function(){						
+	$("#filter-cc").click(function(){						
 		if ($(this).hasClass('on')){
 			cc= true;
 		} else {
@@ -247,7 +247,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-ME").click(function(){						
+	$("#filter-me").click(function(){						
 		if ($(this).hasClass('on')){
 			me= true;
 		} else {
@@ -256,7 +256,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-PP").click(function(){						
+	$("#filter-pp").click(function(){						
 		if ($(this).hasClass('on')){
 			pp= true;
 		} else {
@@ -265,7 +265,7 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
-	$("#filter-AA").click(function(){						
+	$("#filter-aa").click(function(){						
 		if ($(this).hasClass('on')){
 			aa= true;
 		} else {
@@ -415,12 +415,12 @@ $(document).ready(function(){
 		adventures = value;
 	 	series = value;
 	 
-	 	BOF = value;
-		EA = value;
-		CC = value;
-		ME = value;
-		PP = value;
-		AA = value;
+	 	bof = value;
+		ea = value;
+		cc = value;
+		me = value;
+		pp = value;
+		aa = value;
 		
 		artificer = value;
 		barbarian = value;
@@ -497,12 +497,12 @@ $(document).ready(function(){
 		if (adventures){$('.adventures').parent().hide();}	
 	 	if (series){$('.series').parent().hide();}	
 	 
-	 	if (BOF){$('.bof').parent().hide();}	
-		if (EA){$('.ea').parent().hide();}	
-		if (CC){$('.cc').parent().hide();}	
-		if (ME){$('.me').parent().hide();}	
-		if (PP){$('.pp').parent().hide();}	
-		if (AA){$('.aa').parent().hide();}	
+	 	if (bof){$('.bof').parent().hide();}	
+		if (ea){$('.ea').parent().hide();}	
+		if (cc){$('.cc').parent().hide();}	
+		if (me){$('.me').parent().hide();}	
+		if (pp){$('.pp').parent().hide();}	
+		if (aa){$('.aa').parent().hide();}	
 
 	 	if (artificer){$('.artificer').parent().hide();}	
 		if (barbarian){$('.barbarian').parent().hide();}	
@@ -600,12 +600,12 @@ $(document).ready(function(){
 	 	if (!series){$('.series').parent().show();}
 		
 	 	if (series){
-			if (BOF){$('.bof').parent().show();}	
-			if (EA){$('.ea').parent().show();}	
-			if (CC){$('.cc').parent().show();}	
-			if (ME){$('.me').parent().show();}	
-			if (PP){$('.pp').parent().show();}	
-			if (AA){$('.aa').parent().show();}	
+			if (bof){$('.bof').parent().show();}	
+			if (ea){$('.ea').parent().show();}	
+			if (cc){$('.cc').parent().show();}	
+			if (me){$('.me').parent().show();}	
+			if (pp){$('.pp').parent().show();}	
+			if (aa){$('.aa').parent().show();}	
 		}
 	 
 		if (classes){
