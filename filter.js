@@ -571,7 +571,8 @@ $(document).ready(function(){
 			" Classes: " + classes +
 			" Items: "+ items + 
 			" Monsters: " + monsters +
-			" Adventures: " + adventures
+			" Adventures: " + adventures +
+			" Series: " + series
 		);
 		
 		$('.metal').parent().hide();		
