@@ -1,7 +1,7 @@
 var nometal, copper, silver, electrum, gold, platinum, mithral, adamantine = false;
 var backgrounds, feats, npcs, sidekicks, races, spells, mechanics, classes, items, monsters, adventures, series = false;
 var artificer, barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard = false;
-var bof, ea, cc, me, pp, aa = false;
+var pod, fg, bof, ea, cc, me, pp, aa = false;
 
 $(document).ready(function(){
 	  $("#filter-all" ).click(function() {
@@ -220,6 +220,24 @@ $(document).ready(function(){
 		refresh();
 	 });
 	
+	$("#filter-fg").click(function(){						
+		if ($(this).hasClass('on')){
+			fg= true;
+		} else {
+			fg= false;
+		}	
+		refresh();
+	 });
+	
+	$("#filter-pod").click(function(){						
+		if ($(this).hasClass('on')){
+			pod= true;
+		} else {
+			pod= false;
+		}	
+		refresh();
+	 });
+	
 	$("#filter-bof").click(function(){						
 		if ($(this).hasClass('on')){
 			bof= true;
@@ -414,6 +432,9 @@ $(document).ready(function(){
 		monsters = value;
 		adventures = value;
 	 	series = value;
+	 	
+	 	pod = value;
+	 	fg = value;
 	 
 	 	bof = value;
 		ea = value;
@@ -468,7 +489,7 @@ $(document).ready(function(){
 		}
 		
 		var allCatFiltered = false;
-		if (backgrounds && feats && npcs && sidekicks && races && spells && mechanics && classes && items && monsters && series){
+		if (backgrounds && feats && npcs && sidekicks && races && spells && mechanics && classes && items && monsters && series && fg && pod){
 			console.log("All categories filtered.");
 			allCatFiltered = true;
 		}		
@@ -496,6 +517,9 @@ $(document).ready(function(){
 		if (monsters){$('.monsters').parent().hide();}	
 		if (adventures){$('.adventures').parent().hide();}	
 	 	if (series){$('.series').parent().hide();}	
+	 
+	 	if (pod){$('.pod').parent().hide();}	
+	 	if (fg){$('.fg').parent().hide();}	
 	 
 	 	if (bof){$('.bof').parent().hide();}	
 		if (ea){$('.ea').parent().hide();}	
@@ -531,6 +555,8 @@ $(document).ready(function(){
 			if (!monsters){$('.monsters').parent().show();}	
 			if (!adventures){$('.adventures').parent().show();}	
 			if (!series){$('.series').parent().show();}
+			if (!fg){$('.fg').parent().show();}
+			if (!pod){$('.pod').parent().show();}
 		}
 		
 		if (allMetalsFiltered){
@@ -598,6 +624,9 @@ $(document).ready(function(){
 		if (!adventures){$('.adventures').parent().show();}	
 		if (!classes){$('.classes').parent().show();}
 	 	if (!series){$('.series').parent().show();}
+	 
+	 	if (!fg){$('.fg').parent().show();}
+	 	if (!pod){$('.pod').parent().show();}
 		
 	 	if (series){
 			if (!bof){$('.bof').parent().show();}	
